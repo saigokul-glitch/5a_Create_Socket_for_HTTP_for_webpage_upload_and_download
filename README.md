@@ -43,6 +43,7 @@ path = "/"
 download_page(host, path)
 ```
 upload:
+```
 import socket
 
 def upload_file(host, port, filename):
@@ -75,7 +76,8 @@ filename = "example.txt"
 
 upload_file(host, port, filename)
 ```
-## OUTPUT
+```
+## OUTPUT :
 download:
 ![alt text](image.png)
 upload:
