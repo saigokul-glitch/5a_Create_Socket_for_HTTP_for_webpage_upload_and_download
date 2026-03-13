@@ -2,22 +2,28 @@
 ## AIM :
 To write a PYTHON program for socket for HTTP for web page upload and download
 ## Algorithm
-
 1.Start the program.
-<BR>
-2.Get the frame size from the user
-<BR>
-3.To create the frame based on the user request.
-<BR>
-4.To send frames to server from the client side.
-<BR>
-5.If your frames reach the server it will send ACK signal to client otherwise it will send NACK signal to client.
-<BR>
-6.Stop the program
-<BR>
+
+2.Create a socket at the server side and bind it to localhost and port 8080.
+
+3.Put the server in listening mode.
+
+4.Create a client socket and connect it to the server.
+
+5.Display options Download or Upload to the user.
+
+6.If Download is selected, the client sends an HTTP GET request and receives the webpage from the server.
+
+7.If Upload is selected, the client sends an HTTP POST request with data to the server.
+
+8.The server processes the request and sends a response to the client.
+
+9.Close the connection.
+
+10.Stop the program.
 ## Program
 ``` 
-download:
+server:
 import socket
 
 def download_page(host, path):
@@ -42,7 +48,7 @@ path = "/"
 
 download_page(host, path)
 ```
-upload:
+client:
 ```
 import socket
 
